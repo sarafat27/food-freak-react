@@ -9,7 +9,9 @@ const Food = (props) => {
             <h3>Name: {strMeal}</h3>
             <p>category: {strCategory}</p>
             <p>Origin: {strArea}</p>
-            <a href="">Go to youtube</a>
+            <button>
+                <p>Add to order</p>
+            </button>
         </div>
     );
 };

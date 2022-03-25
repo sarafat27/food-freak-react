@@ -1,10 +1,19 @@
-img{
+.single-food{
+    padding: 60px;
+    /* border: 2px solid black; */
+    margin: 30px;
+    position: relative;
+}
+.single-food img{
     height: 400px;
     width: 350px;
 }
-a{
+.single-food button{
+    width: 75%;
     color:white;
     background-color: black;
-    padding: 10px 15px;
     border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    font-size:15px;
 }
