@@ -2,7 +2,7 @@ import React from 'react';
 import './Header.css'
 const Header = () => {
     return (
-        <div>
+        <div className='header'>
             <nav className='nav-bar'>
                 <h1>Food freak</h1>
                 <div>

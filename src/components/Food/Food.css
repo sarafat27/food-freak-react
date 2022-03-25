@@ -1,8 +1,9 @@
 .single-food{
     padding: 60px;
-    /* border: 2px solid black; */
+    border: 2px solid black;
     margin: 30px;
     position: relative;
+    border-radius: 20px;
 }
 .single-food img{
     height: 400px;
@@ -16,4 +17,10 @@
     position: absolute;
     bottom: 0;
     font-size:15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.single-food button p{
+    margin-right: 10px;
 }
