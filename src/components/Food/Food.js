@@ -11,7 +11,7 @@ const Food = ({ addToOrder, food }) => {
             <h3>Name: {strMeal}</h3>
             <p>category: {strCategory}</p>
             <p>Origin: {strArea}</p>
-            <button onClick={() => addToOrder(food)}>
+            <button onClick={() => addToOrder(strMeal)}>
                 <p>Add to order</p>
                 <FontAwesomeIcon icon={faPlateWheat}></FontAwesomeIcon>
             </button>

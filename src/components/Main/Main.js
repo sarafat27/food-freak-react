@@ -5,16 +5,18 @@ import './Main.css'
 const Main = () => {
     const [foods, setFoods] = useState([])
     const [order, setOrder] = useState([])
-    const orderedFood = []
     useEffect(() => {
         fetch('data.json')
             .then(res => res.json())
             .then(data => setFoods(data.meals))
     }, [])
 
-    const addToOrder = (food) => {
-        orderedFood.push(food);
-        console.log(orderedFood)
+    const addToOrder = (foodName) => {
+        const exists = order.find(previous => previous === foodName);
+        if (!exists) {
+            const foodsName = [...order, foodName]
+            setOrder(foodsName)
+        }
     }
 
     return (
